@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>RCHoppers and Plugins</title>
+</head>
+<body>
+<p> <h1>Welcome to the RCHoppers website! </h1>
+    Here you can download all kinds of hopper related plugins made by Lolimi.<br>
+    <br>
+    <br>
+    <h2>RCHoppers</h2>
+    This is the main plugin and required by all other plugins:
+</p>
+<a href="RCHoppers.jar" download="RCHoppers.jar">
+  <p> RCHoppers</p>
+</a>
+<p> <br> <br>
+    <h2>Chunk Hoppers </h2>
+    You can only install one of these versions at once, choose what best fits for you! <br>
+    <br>
+    <h3> For Minecraft version 1.14: </h3>
+</p>
+<a href="ChunkHopperPlugin.jar" download="ChunkHopperPlugin.jar">
+  <p> Chunk Hoppers with normal filters (no autoselling)</p>
+</a>
+
+</body>
+</html>
