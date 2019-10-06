@@ -1,0 +1,157 @@
+h1 {
+   color: midnightblue;
+   font-size: 130%%;
+}
+h2{
+    color: mediumblue;
+    font-size: 130%;
+}
+h3{
+    color: mediumblue; 
+    font-size: 110%;
+}
+p{
+    font-size: 100%;
+}
+
+
+body{
+    background-color: rgba(0,100,255,0.25);
+    margin: 10px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: auto 200px;
+    grid-template-rows: repeat(5, auto);
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    grid-template-areas: 
+    "a a"
+    "b b"
+    "m1 d"
+    "f f";
+}
+
+.box{
+    box-shadow: inset 0 0 3px black;
+    border-radius:15px;
+    padding: 0px 20px;
+}
+
+/* BOXES======================================================================================================== */
+
+.header{
+    grid-area: a;
+    background-color: rgba(70,230,255,0.9);
+    box-shadow: inset 0 0 25px black;
+    border: solid black 1px;
+    color: midnightblue;
+    font-size: 220%;
+    text-align: center;
+    padding: 25px;
+    padding-bottom: 0px;
+    font-weight: bold;
+}
+
+.header p{
+    font-size: 50%
+}
+    
+
+.navbar{
+    grid-area: b;
+    margin: -5px 0px 20px 0px;
+    background-color: rgba(0,50,255,0.25);
+    color: white;
+    text-align: center;
+    padding: 0px;
+}
+
+.navbar>p{
+    font-size: 80%;
+    color: gray;
+    display: inline;
+    margin: 0;
+    float:left;
+}
+
+.navbar ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 10px;
+    border-radius:5px;
+}
+
+.navbar ul li{
+    display: inline;
+    padding: 0em 1.4em;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    margin: 5px 0px;
+    color: midnightblue;
+}
+
+.navbar ul li a:hover{
+    color:  rgb(100,150,255);
+    background-color: midnightblue;
+    border-radius: 5px;
+}
+
+.sideright{
+    grid-area: d;
+    background-color: rgba(0,50,255,0.25);
+    color: midnightblue;
+    font-size: 100%;
+    grid-gap: 2px;
+    display: flex;
+    align-self: start;
+}
+
+.middle1{
+    grid-area: m1;
+    background-color: rgba(0,50,255,0.25);
+}
+
+.footer{
+    grid-area: f;
+    background-color: rgba(0,50,255,0.25);
+    text-align: center;
+}
+
+.footer p{
+    font-size: 70%;
+}
+
+/* LINKS======================================================================================================= */
+    
+a:link{
+    color: blue;
+}
+
+a:visited{
+    color: darkcyan;
+}
+
+a:hover{
+    color: blueviolet;
+}
+
+#copy{
+    color: red;
+}
+
+/* SPECIAL LETTERS / WORDS ==================================================================================== */
+
+.hoppername{
+    color: cyan;
+    font-weight: bold;
+}
+
+.firstletter{
+    color: green;
+    font-weight: bold;
+}
+

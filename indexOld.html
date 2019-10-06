@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>RCHoppers and Plugins</title>
+</head>
+
+
+<body>
+
+<div id="header">
+    <div>
+    <h1> 
+        lolimi.github.io
+    </h1>
+    <p> 
+       <b> All about all kinds of hopper related plugins made by Lolimi and more. </b>
+    </p>
+    </div>
+</div>
+
+<div id="navbar">
+    <p> Home </p>
+    <ul>
+        <li> <a href="index.html"> Home </a> </li>
+        <li> <a href="rchoppers/rchoppers.html"> RCHoppers </a> </li>
+        <li> <a href="rchoppers/chunkhoppers/chunkhoppers.html"> Chunk Hoppers </a> </li>
+        <li> <a href="wiki.html"> Wiki </a> </li>
+        <li> <a href="about.html"> About </a> </li>
+    </ul>
+</div>
+
+<div class="sideright">
+    <h1> Recent updates: </h1>
+</div>
+
+<div id="div">
+    <h2>
+        About RCHoppers
+    </h2>
+    <p>
+        <span class="firstletter">R</span>CHoppers started out as my first real spigot plugin project on a real SkyBlock server with other people: the <a href="" title="click to copy ip adress" id="copy" data-clipboard-text="play.rccrafters.net">RCCrafters server</a>, that's also where the name comes from. What started out as a performance heavy plugin with just a few functions, became a huge plugin, that helps a lot on the performance and adds lots of features. <br> 
+        <span class="firstletter">A</span>fter the <span class="hoppername"> Chunk Hopper</span>, that picks up items in an entire chunk and saves on the items physics calculations, came the <span class="hoppername"> Sorting Hopper,</span> that just helps with your sorting systems and reduces the amount of hoppers and redstone needed. <br>
+        <span class="firstletter">T</span>he <span class="hoppername"> Storage Unit Hopper </span> helps reducing the amount of chests needed, if you have a farm, that produces a lot of one item type: it allows you to store an unlimited amount of one item type in only one block, respecting different item names and lores. <br>
+        <span class="firstletter">T</span>o make the sorting system perfect there is also a hopper for your overflow: The <span class="hoppername"> Void Hopper</span>, that just voids any item that get's inside of it. <br>
+        <span class="firstletter">T</span>he newest addition is the <span class="hoppername"> Auto Crafter</span>: The only item, that is not a hopper. But it does exactly what you would think: it autocrafts items. The player can set the item to be autocrafted in a setup gui and then the items can be put in using hoppers and taken out using another hopper below the crafter.<br><br>
+        <span class="firstletter">S</span>ince this plugin was highly custom for the servers needs and had everything hard coded, there was no way it could be published. So i decided to give it a complete overhaul, adding new ways to make even easyer on the server performance and also more customizable. In the mean time i also got interested in learning html, so i decided to write my own website, which you are on at the moment. <br>
+        <span class="firstletter">T</span>he real big thing about the new RCHoppers is that it is easy to make plugins for it, using the main RCHoppers plugin. So if you are a developer and want to try 
+        
+    </p>
+    
+    <h2>
+        RCHoppers plugin
+    </h2>
+    <p>
+        <span class="firstletter">T</span>his is the main base plugin, which is required to use almost all other plugins. It takes care of saving all types of RCHoppers and makes it easy to create other plugins. Every developer is invited to write their own RCHopper plugin and to upload it on this website. More about this here: <a href="rchoppers.rchoppers.html"> RCHoppers </a>
+    </p>
+</div>
+
+<div id="div">
+    <h2>
+        Chunk Hoppers 
+    </h2>
+    
+    <p>
+        <span class="firstletter">C</span>hunk Hoppers was the first and main RCHoppers plugin. It basically adds a hopper, that can pick up all items that drop in one entire chunk. There are various versions, that allow you to choose between tier systems and autosell options. The plugin is also available for multiple minecraft versions. More about this here: <a href="rchoppers.chunkhoppers.chunkhoppers.html"> ChunkHoppers </a>
+    </p>
+    
+    <!--<h3> 
+        For Minecraft version 1.13 and 1.14: 
+    </h3>
+
+    <a href="ChunkHopper/1.14/ChunkHopperPluginNormal.jar" download="ChunkHopperPlugin">
+        Chunk Hoppers with normal filters (no autoselling) <br> <br>
+    </a>
+
+    <a href="ChunkHopper/1.14/ChunkHopperPluginSelling.jar" download="ChunkHopperPlugin">
+        Chunk Hoppers with autoselling <br> <br>
+    </a>
+
+    <p> 
+        <b>If you like to use a leveling system use one of these versions: </b> 
+    </p>
+
+    <a href="ChunkHopper/1.14/ChunkHopperPluginNormalTier.jar" download="ChunkHopperPlugin">
+        Chunk Hoppers normal filters and leveling system <br> <br>
+    </a>
+
+    <a href="ChunkHopper/1.14/ChunkHopperPluginSellingTier.jar" download="ChunkHopperPlugin">
+        Chunk Hoppers autoselling and leveling system <br> <br>
+    </a>
+    
+    <hr>
+    
+    <a class="version" href="ChunkHopper/1.12/1.12.html">
+        <b> Chunk Hoppers 1.12.2 </b><br> <br>
+    </a>
+    
+    <a href="ChunkHopperLegacy.jar" download="ChunkHopperPlugin.jar">
+        <b>
+            Chunk Hoppers LEGACY (1.8 - 1.11) 
+            This is a standalone plugin that does not need RCHoppers!
+        </b>
+    </a>-->
+</div>
+
+<script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+
+<script>
+    var btn = document.getElementById('copy');
+    var clipboard = new ClipboardJS(btn);
+
+    clipboard.on("success", function(e){
+        console.log(e);
+    });
+        clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script>
+
+</body>
+</html>
