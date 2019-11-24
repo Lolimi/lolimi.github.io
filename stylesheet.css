@@ -3,21 +3,36 @@ h1 {
    font-size: 130%%;
 }
 h2{
-    color: mediumblue;
+    color: #59A5D8;
     font-size: 130%;
 }
 h3{
-    color: mediumblue; 
-    font-size: 110%;
+    color: #59A5D8; 
+    font-size: 100%;
 }
 p{
     font-size: 100%;
 }
 
+.bg {
+  /* The image used */
+  background-image: url("hopper.png");
+
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: space no-repeat;
+  background-size: 300px;
+  background-attachment: fixed;
+}
 
 body{
-    background-color: rgba(0,100,255,0.25);
+    //background-color: rgba(0,100,255,0.25);
+    background-color: #84D2F6;
     margin: 10px;
+    
 }
 
 .main{
@@ -43,8 +58,9 @@ body{
 
 .header{
     grid-area: a;
-    background-color: rgba(70,230,255,0.9);
-    box-shadow: inset 0 0 25px black;
+    background-color: rgba(145,299,246,0.75);
+    //background-color: #91E5F6;
+    box-shadow: inset 0 0 15px black;
     border: solid black 1px;
     color: midnightblue;
     font-size: 220%;
@@ -62,7 +78,8 @@ body{
 .navbar{
     grid-area: b;
     margin: -5px 0px 20px 0px;
-    background-color: rgba(0,50,255,0.25);
+    background-color: rgba(145,299,246,0.7);
+    //background-color: #91E5F6;
     color: white;
     text-align: center;
     padding: 0px;
@@ -83,15 +100,28 @@ body{
     border-radius:5px;
 }
 
+
+
 .navbar ul li{
     display: inline;
     padding: 0em 1.4em;
+    color: blueviolet;
+}
+
+.navbar ul li span{
+    display: inline;
+    padding: 0em 1.4em;
+    color: blueviolet;
+    margin: 5px 0px;
+    padding: 3px 6px;
 }
 
 .navbar ul li a{
     text-decoration: none;
     margin: 5px 0px;
     color: midnightblue;
+    padding: 3px 6px;
+    
 }
 
 .navbar ul li a:hover{
@@ -99,36 +129,62 @@ body{
     background-color: midnightblue;
     border-radius: 5px;
 }
+@media (max-width: 700px) {
+  .navbar ul li{
+    display: block;
+    padding: 3px;
+    
+  }
+  body{
+      font-size: 130%;
+  }
+}
 
 .sideright{
     grid-area: d;
-    background-color: rgba(0,50,255,0.25);
-    color: midnightblue;
+    //background-color: rgba(0,50,255,0.25);
+    background-color: #24305E;
+    color: lightgray;
     font-size: 100%;
     grid-gap: 2px;
     display: flex;
     align-self: start;
+    padding: 0px;
 }
 
 .middle1{
     grid-area: m1;
-    background-color: rgba(0,50,255,0.25);
+    background-color: rgba(20,30,80,0.9);
+    //background-color: #24305E;
+    color: lightgray;
+    
 }
 
 .footer{
     grid-area: f;
-    background-color: rgba(0,50,255,0.25);
+    background-color: rgba(20,30,80,0.9);
+    //background-color: #24305E;
     text-align: center;
+    color: white;
 }
 
 .footer p{
     font-size: 70%;
 }
 
+.list-unstyled{
+    list-style: none;
+    margin-left: -40px;
+}
+
+.list-unstyled li{
+    margin-bottom: 5px;
+}
+
 /* LINKS======================================================================================================= */
     
 a:link{
-    color: blue;
+    color: blueviolet;
 }
 
 a:visited{
@@ -136,7 +192,7 @@ a:visited{
 }
 
 a:hover{
-    color: blueviolet;
+    color: violet;
 }
 
 #copy{
@@ -155,3 +211,116 @@ a:hover{
     font-weight: bold;
 }
 
+.recent_updates{
+    margin: 0px;
+    background-color:#24305E;
+    width: 190px;
+    padding-left: 10px;
+    color: gray;
+}
+
+.recent_updates p{
+    font-size: 80%;
+}
+
+iframe{
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: inset 0 0 3px black;
+    
+}
+
+
+
+/* =================================================================================== DROPDOWN ============================================================== */
+
+.navbar {
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: center;
+  overflow: hidden;
+  display: inline;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 100%;  
+  border: none;
+  outline: 0;
+  padding: 3px 6px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  color: midnightblue;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 80px;
+  z-index: 1;
+  background-color: #91E5F6;
+  box-shadow: inset 0 0 3px black;
+  border-radius:7px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 0;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  color: midnightblue;
+}
+
+.dropdown-content a:hover {
+  color:  rgb(100,150,255);
+  background-color: midnightblue;
+  border-radius: 5px;
+}
+
+.show {
+  display: inline-block;
+}
+
+.dropdown:hover .dropbtn{
+  color:  rgb(100,150,255);
+  background-color: midnightblue;
+  border-radius: 5px;
+}
+
+.dropdown:active .dropbtn{
+  color:  rgb(100,150,255);
+  background-color: midnightblue;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.arrow-right {
+  display: inline-block;
+  width: 0; 
+  height: 0; 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  
+  border-left: 5px solid midnightblue;
+}
+
+.dropdown:hover .dropbtn .arrow-right{
+  border-left: 5px solid rgb(100,150,255);
+}

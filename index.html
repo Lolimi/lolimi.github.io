@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <title>RCHoppers</title>
+    <link rel="icon" href="icon.png">
 </head> 
 
-<body>
-
+<body class="bg">
 <div class="main">
 
 <div class="box header">
@@ -19,16 +19,33 @@
 
 <div class="box navbar">
     <ul>
-        <li> <a href="index.html"> Home </a> </li>
-        <li> <a href="rchoppers/rchoppers.html"> RCHoppers </a> </li>
-        <li> <a href="rchoppers/chunkhopper/chunkhoppers.html"> Chunk Hoppers </a> </li>
+        <li> <span> Home </span> </li>
+        <li> <a href="download.html"> Downloads </a> </li>
         <li> <a href="wiki.html"> Wiki </a> </li>
-        <li> <a href="about.html"> About </a> </li>
+        <li>
+            <div class="dropdown">
+
+                <button class="dropbtn" onclick="myFunction()"> Plugins
+ &nbsp<div class="arrow-right"></div>
+                    
+                </button>
+
+                <div class="dropdown-content" id="myDropdown">
+
+                    <a href="rchoppers/chunkhopper/chunkhoppers.html">Chunk Hoppers</a>
+
+                    <a href="#">Sort Hoppers</a>
+
+                    <a href="#">Storage Units</a>
+
+                </div>
+            </div>
+        </li>
     </ul>
 </div>
 
 <div class="box sideright">
-    <h3>Recent updates:</h3>
+    <iframe src="sideright.html" seamless></iframe>
 </div>
 
 <div class="box middle1">
@@ -36,7 +53,7 @@
         About RCHoppers
     </h2>
     <p>
-        <span class="firstletter">R</span>CHoppers started out as my first real spigot plugin project on a real SkyBlock server with other people: the <a href="" title="click to copy ip adress" id="copy" data-clipboard-text="play.rccrafters.net">RCCrafters server</a>, that's also where the name comes from. What started out as a performance heavy plugin with just a few functions, became a huge plugin, that helps a lot on the performance and adds lots of features. <br> 
+        <span class="firstletter">R</span>CHoppers started out as my first real spigot plugin project on a real SkyBlock server with other people: the <a href="" title="click to copy ip adress" id="copy" data-clipboard-text="play.rccrafters.net">RCCrafters server</a>, that's also where the name comes from. What started out as a performance heavy plugin with just a few functions, became a huge project, that helps a lot on the performance and adds lots of features. <br> 
         <span class="firstletter">A</span>fter the <span class="hoppername"> Chunk Hopper</span>, that picks up items in an entire chunk and saves on the items physics calculations, came the <span class="hoppername"> Sorting Hopper,</span> that just helps with your sorting systems and reduces the amount of hoppers and redstone needed. <br>
         <span class="firstletter">T</span>he <span class="hoppername"> Storage Unit Hopper </span> helps reducing the amount of chests needed, if you have a farm, that produces a lot of one item type: it allows you to store an unlimited amount of one item type in only one block, respecting different item names and lores. <br>
         <span class="firstletter">T</span>o make the sorting system perfect there is also a hopper for your overflow: The <span class="hoppername"> Void Hopper</span>, that just voids any item that get's inside of it. <br>
@@ -45,15 +62,14 @@
     
         <span class="firstletter">S</span>ince this plugin was highly custom for the servers needs and had everything hard coded, there was no way it could be published. So i decided to give it a complete overhaul, adding new ways to make even easyer on the server performance and also more customizable. In the mean time i also got interested in learning html, so i decided to write my own website, which you are on at the moment. <br>
         <span class="firstletter">T</span>he real big thing about the new RCHoppers is that it is easy to make plugins for it, using the main RCHoppers plugin. So if you are a developer and want to try something new and relatively simple you are very welcome to contact me, your project could then also be uploaded here!
-        
     </p>
     
-    <h2>
+   <!-- <h2>
         RCHoppers plugin
     </h2>
     <p>
         <span class="firstletter">T</span>his is the main base plugin, which is required to use almost all other plugins. It takes care of saving all types of RCHoppers and makes it easy to create other plugins. Every developer is invited to write their own RCHopper plugin and to upload it on this website. More about this here: <a href="rchoppers.rchoppers.html"> RCHoppers </a>
-    </p>
+    </p>-->
 </div>
 
 <div class="box footer">
@@ -79,6 +95,7 @@
 
 </div>
 
+
 <!-- COPY TO CLIPBOARD SCRIPT ============================================================================== -->
 
 <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
@@ -95,7 +112,32 @@
     });
 </script>
 
+<script>
 
+    function myFunction() {
+
+        document.getElementById("myDropdown").classList.toggle("show");
+
+    }
+
+    
+    window.onclick = function(e) {
+
+        if (!e.target.matches('.dropbtn')) {
+
+            var myDropdown = document.getElementById("myDropdown");
+
+            if (myDropdown.classList.contains('show')) {
+
+                myDropdown.classList.remove('show');
+
+            }
+
+        }
+
+    }
+
+</script>
 
 </body>
 </html>
